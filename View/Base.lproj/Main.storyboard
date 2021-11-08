@@ -89,12 +89,21 @@
                                 <color key="backgroundColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <variation key="heightClass=compact-widthClass=regular" axis="vertical"/>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe up to share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQG-nQ-Z8i">
+                                <rect key="frame" x="139" y="267.5" width="136" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.74526548390000003" green="0.86388248209999996" blue="0.91216236350000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" systemColor="labelColor"/>
                         <constraints>
+                            <constraint firstItem="mQG-nQ-Z8i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0ec-d7-nOm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jX0-Xx-iZl" secondAttribute="bottom" constant="10" id="5mP-Hx-lbl"/>
+                            <constraint firstItem="mQG-nQ-Z8i" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DcZ-3P-5cb"/>
+                            <constraint firstItem="q4a-gr-uz2" firstAttribute="leading" secondItem="mQG-nQ-Z8i" secondAttribute="trailing" constant="10" id="Dw1-Pf-mVA"/>
                             <constraint firstItem="gjt-0D-ZYH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gz5-qI-sXj"/>
                             <constraint firstItem="jX0-Xx-iZl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PCV-LH-oFr"/>
                             <constraint firstItem="gjt-0D-ZYH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="VEt-VW-DWb"/>
@@ -102,16 +111,21 @@
                             <constraint firstItem="jX0-Xx-iZl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bjO-eh-xr5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jX0-Xx-iZl" secondAttribute="trailing" constant="10" id="mCy-kf-aku"/>
                             <constraint firstItem="q4a-gr-uz2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wUt-Se-x7n"/>
+                            <constraint firstItem="q4a-gr-uz2" firstAttribute="top" secondItem="mQG-nQ-Z8i" secondAttribute="bottom" constant="10" id="zwL-N6-Dml"/>
                         </constraints>
                         <variation key="heightClass=compact-widthClass=regular">
                             <mask key="constraints">
                                 <exclude reference="5mP-Hx-lbl"/>
+                                <exclude reference="0ec-d7-nOm"/>
+                                <exclude reference="zwL-N6-Dml"/>
                                 <exclude reference="bjO-eh-xr5"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
                                 <exclude reference="mCy-kf-aku"/>
+                                <exclude reference="DcZ-3P-5cb"/>
+                                <exclude reference="Dw1-Pf-mVA"/>
                                 <exclude reference="PCV-LH-oFr"/>
                             </mask>
                         </variation>
