@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,27 +13,27 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Instagrid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagrid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjt-0D-ZYH">
-                                <rect key="frame" x="174" y="54" width="66.5" height="20.5"/>
+                                <rect key="frame" x="415" y="10" width="66.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="q4a-gr-uz2" userLabel="stackGridbuttonsAddPic">
-                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <rect key="frame" x="298" y="57" width="300" height="300"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8hu-3J-LHi" userLabel="stackTopButtonsAddPic">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="150"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8L-zv-hXa">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8L-zv-hXa" userLabel="addPicLeftTop">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gG-oY-pcN">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gG-oY-pcN" userLabel="addPicRightTop">
                                                 <rect key="frame" x="150" y="0.0" width="150" height="150"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
@@ -43,12 +43,12 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fvb-4p-3Un" userLabel="stackBottomButtonsAddPic">
                                         <rect key="frame" x="0.0" y="150" width="300" height="150"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypo-nW-GVO">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypo-nW-GVO" userLabel="addPicLeftBottom">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bP2-hz-FnR">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bP2-hz-FnR" userLabel="addPicRightBottom">
                                                 <rect key="frame" x="150" y="0.0" width="150" height="150"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
@@ -64,28 +64,37 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe up to share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQG-nQ-Z8i">
-                                <rect key="frame" x="139" y="247.5" width="136" height="20.5"/>
+                                <rect key="frame" x="142" y="197" width="136" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Ixa-pz-wNh" userLabel="stackButtonsLayout">
-                                <rect key="frame" x="20" y="821" width="374" height="31"/>
+                                <rect key="frame" x="722.5" y="158.5" width="119.5" height="97"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCG-xr-46f">
-                                        <rect key="frame" x="0.0" y="0.0" width="123.5" height="31"/>
+                                        <rect key="frame" x="10.5" y="0.0" width="98.5" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="First button"/>
+                                        <connections>
+                                            <action selector="didTapButtonLayoutOption:" destination="BYZ-38-t0r" eventType="touchUpInside" id="noE-30-56n"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCb-tn-9ke">
-                                        <rect key="frame" x="125.5" y="0.0" width="123" height="31"/>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCb-tn-9ke">
+                                        <rect key="frame" x="0.0" y="33" width="119.5" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Second button"/>
+                                        <connections>
+                                            <action selector="didTapButtonLayoutOption:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8fC-Fy-apb"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8Z-VL-BS9">
-                                        <rect key="frame" x="250.5" y="0.0" width="123.5" height="31"/>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8Z-VL-BS9">
+                                        <rect key="frame" x="8" y="66" width="104" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Third button"/>
+                                        <connections>
+                                            <action selector="didTapButtonLayoutOption:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qDm-Dg-KI8"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
@@ -118,6 +127,7 @@
                                 <exclude reference="0ec-d7-nOm"/>
                                 <exclude reference="zwL-N6-Dml"/>
                                 <exclude reference="5Ue-58-HOe"/>
+                                <exclude reference="RqF-a6-Gdp"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -129,6 +139,15 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outletCollection property="buttonsLayoutsChoice" destination="FCG-xr-46f" collectionClass="NSMutableArray" id="VU0-b7-3aI"/>
+                        <outletCollection property="buttonsLayoutsChoice" destination="hCb-tn-9ke" collectionClass="NSMutableArray" id="L1z-r2-EtJ"/>
+                        <outletCollection property="buttonsLayoutsChoice" destination="T8Z-VL-BS9" collectionClass="NSMutableArray" id="vDD-Xu-DMD"/>
+                        <outletCollection property="buttonsToAddPic" destination="t8L-zv-hXa" collectionClass="NSMutableArray" id="FWK-BP-gWv"/>
+                        <outletCollection property="buttonsToAddPic" destination="3gG-oY-pcN" collectionClass="NSMutableArray" id="C77-gf-Vzx"/>
+                        <outletCollection property="buttonsToAddPic" destination="ypo-nW-GVO" collectionClass="NSMutableArray" id="ASC-lj-Ump"/>
+                        <outletCollection property="buttonsToAddPic" destination="bP2-hz-FnR" collectionClass="NSMutableArray" id="WdF-hC-BJG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
