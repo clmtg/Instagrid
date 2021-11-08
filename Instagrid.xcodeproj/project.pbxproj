@@ -16,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB1BAFBE27392E10003E00F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		EB1BAFC027392E25003E00F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		EBEAF04A2739125E009638B7 /* Instagrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBEAF04D2739125E009638B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBEAF04F2739125E009638B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,9 @@
 			isa = PBXGroup;
 			children = (
 				EBEAF04C2739125E009638B7 /* Instagrid */,
+				EBEAF064273915EE009638B7 /* SupportingFiles */,
+				EBEAF063273915DB009638B7 /* Controller */,
+				EBEAF062273915D0009638B7 /* View */,
 				EBEAF04B2739125E009638B7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,15 +61,36 @@
 		EBEAF04C2739125E009638B7 /* Instagrid */ = {
 			isa = PBXGroup;
 			children = (
-				EBEAF04D2739125E009638B7 /* AppDelegate.swift */,
-				EBEAF04F2739125E009638B7 /* SceneDelegate.swift */,
-				EBEAF0512739125E009638B7 /* ViewController.swift */,
-				EBEAF0532739125E009638B7 /* Main.storyboard */,
-				EBEAF05627391260009638B7 /* Assets.xcassets */,
-				EBEAF05827391260009638B7 /* LaunchScreen.storyboard */,
-				EBEAF05B27391260009638B7 /* Info.plist */,
 			);
 			path = Instagrid;
+			sourceTree = "<group>";
+		};
+		EBEAF062273915D0009638B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EBEAF05827391260009638B7 /* LaunchScreen.storyboard */,
+				EBEAF0532739125E009638B7 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EBEAF063273915DB009638B7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EBEAF0512739125E009638B7 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EBEAF064273915EE009638B7 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				EBEAF05B27391260009638B7 /* Info.plist */,
+				EBEAF04D2739125E009638B7 /* AppDelegate.swift */,
+				EBEAF04F2739125E009638B7 /* SceneDelegate.swift */,
+				EBEAF05627391260009638B7 /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +177,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				EBEAF0542739125E009638B7 /* Base */,
+				EB1BAFBE27392E10003E00F5 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -159,6 +186,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				EBEAF05927391260009638B7 /* Base */,
+				EB1BAFC027392E25003E00F5 /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -289,14 +317,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CES656DH72;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Instagrid/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,14 +347,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CES656DH72;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Instagrid/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
