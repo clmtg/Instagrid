@@ -75,12 +75,6 @@
                                     <constraint firstAttribute="width" secondItem="q4a-gr-uz2" secondAttribute="height" multiplier="1:1" id="wTy-Zn-a8e"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe up to share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQG-nQ-Z8i">
-                                <rect key="frame" x="139" y="247.5" width="136" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Ixa-pz-wNh" userLabel="stackButtonsLayout">
                                 <rect key="frame" x="80" y="811" width="254.5" height="31"/>
                                 <subviews>
@@ -112,6 +106,12 @@
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" axis="horizontal"/>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe up to share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQG-nQ-Z8i">
+                                <rect key="frame" x="139" y="247.5" width="136" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.74526548390000003" green="0.86388248209999996" blue="0.91216236350000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -133,13 +133,14 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="nta-7X-JVe"/>
+                                <exclude reference="0ec-d7-nOm"/>
+                                <exclude reference="zwL-N6-Dml"/>
                                 <exclude reference="jUe-at-Cl3"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
                             <mask key="constraints">
                                 <exclude reference="nta-7X-JVe"/>
-                                <exclude reference="0ec-d7-nOm"/>
                                 <exclude reference="zwL-N6-Dml"/>
                                 <exclude reference="jUe-at-Cl3"/>
                             </mask>
@@ -148,8 +149,10 @@
                             <mask key="constraints">
                                 <exclude reference="YWn-9b-L75"/>
                                 <include reference="nta-7X-JVe"/>
+                                <include reference="0ec-d7-nOm"/>
                                 <exclude reference="DcZ-3P-5cb"/>
                                 <exclude reference="Dw1-Pf-mVA"/>
+                                <include reference="zwL-N6-Dml"/>
                                 <exclude reference="NZf-zZ-V4o"/>
                                 <include reference="jUe-at-Cl3"/>
                             </mask>
