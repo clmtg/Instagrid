@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="landscape" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,17 +13,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Instagrid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagrid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjt-0D-ZYH">
-                                <rect key="frame" x="388.66666666666669" y="9.9999999999999982" width="66.666666666666686" height="20.333333333333329"/>
+                                <rect key="frame" x="174" y="54" width="66.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="q4a-gr-uz2" userLabel="stackGridbuttonsAddPic">
-                                <rect key="frame" x="510" y="235.33333333333337" width="300" height="300"/>
+                                <rect key="frame" x="57" y="298" width="300" height="300"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8hu-3J-LHi" userLabel="stackTopButtonsAddPic">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="150"/>
@@ -47,7 +47,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fvb-4p-3Un" userLabel="stackBottomButtonsAddPic">
-                                        <rect key="frame" x="0.0" y="149.99999999999997" width="300" height="150.00000000000003"/>
+                                        <rect key="frame" x="0.0" y="150" width="300" height="150"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypo-nW-GVO" userLabel="addPicLeftBottom">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
@@ -76,16 +76,16 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe up to share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQG-nQ-Z8i">
-                                <rect key="frame" x="354" y="185" width="136" height="20.333333333333343"/>
+                                <rect key="frame" x="139" y="247.5" width="136" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Ixa-pz-wNh" userLabel="stackButtonsLayout">
-                                <rect key="frame" x="64" y="146.66666666666666" width="716" height="97"/>
+                                <rect key="frame" x="80" y="811" width="254.5" height="31"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCG-xr-46f">
-                                        <rect key="frame" x="320.33333333333331" y="0.0" width="75.333333333333314" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="83.5" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="button0"/>
                                         <connections>
@@ -93,7 +93,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCb-tn-9ke">
-                                        <rect key="frame" x="317.33333333333331" y="33" width="81.666666666666686" height="31"/>
+                                        <rect key="frame" x="85.5" y="0.0" width="83.5" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="button01"/>
                                         <connections>
@@ -101,7 +101,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8Z-VL-BS9">
-                                        <rect key="frame" x="316.33333333333331" y="66" width="83.666666666666686" height="31"/>
+                                        <rect key="frame" x="171" y="0.0" width="83.5" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="button02"/>
                                         <connections>
@@ -133,6 +133,7 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="nta-7X-JVe"/>
+                                <exclude reference="jUe-at-Cl3"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
@@ -150,6 +151,7 @@
                                 <exclude reference="DcZ-3P-5cb"/>
                                 <exclude reference="Dw1-Pf-mVA"/>
                                 <exclude reference="NZf-zZ-V4o"/>
+                                <include reference="jUe-at-Cl3"/>
                             </mask>
                         </variation>
                     </view>
