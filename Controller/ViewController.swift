@@ -16,6 +16,9 @@ class ViewController: UIViewController {
     
     // MARK: - Var
     
+    //Temp data - Used to load user picked image as button background
+    private var buttonBeingUsed: UIButton?
+    
 
     
     // MARK: - IBOutlet
@@ -31,8 +34,14 @@ class ViewController: UIViewController {
     // MARK: - IBAction
     
     //--- Related to the layout options that can be chosen by the user.
-    @IBAction func didTapButtonLayoutOption(_ sender: UIButton) {
-        changeLayoutType(sender)
+        @IBAction func didTapButtonOptionLayout(_ sender: UIButton) {
+            changeLayoutType(sender)
+        }
+    
+    //--- Related to the feature to add picture to the layout selected.
+    @IBAction func didTapButtonsToAddPics(_ sender: UIButton) {
+        buttonBeingUsed = sender
+        addPictures(sender)
     }
     
     
@@ -50,22 +59,18 @@ class ViewController: UIViewController {
         switch buttonLayout.tag {
         case 0:
             //Layout LeftButton
-            print(buttonLayout.tag)
             buttonsToAddPic[1].isHidden = true
             buttonsToAddPic[3].isHidden = false
         case 1:
-            print(buttonLayout.tag)
             //Layout CenterButton
             buttonsToAddPic[1].isHidden = false
             buttonsToAddPic[3].isHidden = true
         case 2:
-            print(buttonLayout.tag)
             //Layout RightButton
             for i in buttonsToAddPic {
                 i.isHidden = false
             }
         default:
-            print(buttonLayout.tag)
             //Default layout
             for i in buttonsToAddPic {
                 i.isHidden = false
@@ -73,6 +78,37 @@ class ViewController: UIViewController {
         }
     }
     
+    
+    /// Display the UIImagePickerController and "save" picture selected by the user
+    /// - Parameter buttonAddPic: button tapped (should be from the layout grid)
+    func addPictures(_ buttonAddPic: UIButton) {
+        
+        let imagePicker = UIImagePickerController()
+        
+        //Check if device is capable to provide picture from library
+        if !UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+            return
+        }
+         
+         imagePicker.delegate = self
+         imagePicker.sourceType = .photoLibrary
+         imagePicker.allowsEditing = false
+         self.present(imagePicker, animated: true, completion: nil)
+    }
+}
+
+// MARK: - Extensions
+
+// To display images picker
+extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        let image = info[.originalImage] as? UIImage
+        buttonBeingUsed?.setImage(image, for: .normal)
+        buttonBeingUsed?.contentMode = .scaleAspectFill
+        picker.dismiss(animated: true, completion: nil)
+    }
     
 }
 
