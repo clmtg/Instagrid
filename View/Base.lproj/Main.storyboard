@@ -22,61 +22,78 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="q4a-gr-uz2" userLabel="stackGridbuttonsAddPic">
-                                <rect key="frame" x="45" y="272" width="300" height="300"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1KM-nu-QZc">
+                                <rect key="frame" x="35" y="262" width="320" height="320"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8hu-3J-LHi" userLabel="stackTopButtonsAddPic">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="150"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="q4a-gr-uz2" userLabel="stackGridbuttonsAddPic">
+                                        <rect key="frame" x="10" y="10" width="300" height="300"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8L-zv-hXa" userLabel="addPicLeftTop">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" image="square.and.arrow.up" catalog="system"/>
-                                                <connections>
-                                                    <action selector="didTapButtonsToAddPics:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H1g-1P-ShF"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gG-oY-pcN" userLabel="addPicRightTop">
-                                                <rect key="frame" x="150" y="0.0" width="150" height="150"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" image="pencil" catalog="system"/>
-                                                <connections>
-                                                    <action selector="didTapButtonsToAddPics:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tPL-mg-uvg"/>
-                                                </connections>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8hu-3J-LHi" userLabel="stackTopButtonsAddPic">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="146"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8L-zv-hXa" userLabel="addPicLeftTop">
+                                                        <rect key="frame" x="0.0" y="0.0" width="146" height="146"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="square.and.arrow.up" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="didTapButtonsToAddPics:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H1g-1P-ShF"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gG-oY-pcN" userLabel="addPicRightTop">
+                                                        <rect key="frame" x="154" y="0.0" width="146" height="146"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="pencil" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="didTapButtonsToAddPics:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tPL-mg-uvg"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fvb-4p-3Un" userLabel="stackBottomButtonsAddPic">
+                                                <rect key="frame" x="0.0" y="154" width="300" height="146"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypo-nW-GVO" userLabel="addPicLeftBottom">
+                                                        <rect key="frame" x="0.0" y="0.0" width="146" height="146"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="rectangle.portrait.and.arrow.right" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="didTapButtonsToAddPics:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ao6-IR-ecB"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bP2-hz-FnR" userLabel="addPicRightBottom">
+                                                        <rect key="frame" x="154" y="0.0" width="146" height="146"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="pencil.slash" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="didTapButtonsToAddPics:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iwZ-hW-we9"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fvb-4p-3Un" userLabel="stackBottomButtonsAddPic">
-                                        <rect key="frame" x="0.0" y="150" width="300" height="150"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypo-nW-GVO" userLabel="addPicLeftBottom">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" image="rectangle.portrait.and.arrow.right" catalog="system"/>
-                                                <connections>
-                                                    <action selector="didTapButtonsToAddPics:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ao6-IR-ecB"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bP2-hz-FnR" userLabel="addPicRightBottom">
-                                                <rect key="frame" x="150" y="0.0" width="150" height="150"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" image="pencil.slash" catalog="system"/>
-                                                <connections>
-                                                    <action selector="didTapButtonsToAddPics:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iwZ-hW-we9"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
+                                        <color key="backgroundColor" red="0.039373926820000002" green="0.39305326340000002" blue="0.62420672180000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="F3a-6G-C9S"/>
+                                            <constraint firstAttribute="height" constant="300" id="JLU-Zk-DTm"/>
+                                            <constraint firstAttribute="width" secondItem="q4a-gr-uz2" secondAttribute="height" multiplier="1:1" id="wTy-Zn-a8e"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <color key="backgroundColor" red="0.039373926820000002" green="0.39305326340000002" blue="0.62420672180000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="F3a-6G-C9S"/>
-                                    <constraint firstAttribute="height" constant="300" id="JLU-Zk-DTm"/>
-                                    <constraint firstAttribute="width" secondItem="q4a-gr-uz2" secondAttribute="height" multiplier="1:1" id="wTy-Zn-a8e"/>
+                                    <constraint firstItem="q4a-gr-uz2" firstAttribute="top" secondItem="1KM-nu-QZc" secondAttribute="top" constant="10" id="5lE-Fc-fMj"/>
+                                    <constraint firstItem="q4a-gr-uz2" firstAttribute="leading" secondItem="1KM-nu-QZc" secondAttribute="leading" constant="10" id="8Lu-eh-vWi"/>
+                                    <constraint firstAttribute="width" constant="320" id="GwI-lM-Hut"/>
+                                    <constraint firstAttribute="height" constant="320" id="VbV-OM-hvX"/>
+                                    <constraint firstAttribute="width" secondItem="1KM-nu-QZc" secondAttribute="height" multiplier="1:1" id="ZWG-nW-bgX"/>
                                 </constraints>
-                            </stackView>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Ixa-pz-wNh" userLabel="stackButtonsLayout">
-                                <rect key="frame" x="67.666666666666686" y="759" width="255" height="31"/>
+                                <rect key="frame" x="67.666666666666629" y="759" width="255" height="31"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCG-xr-46f">
                                         <rect key="frame" x="0.0" y="0.0" width="83.666666666666671" height="31"/>
@@ -119,29 +136,35 @@
                         <constraints>
                             <constraint firstItem="mQG-nQ-Z8i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0ec-d7-nOm"/>
                             <constraint firstItem="mQG-nQ-Z8i" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DcZ-3P-5cb"/>
-                            <constraint firstItem="q4a-gr-uz2" firstAttribute="leading" secondItem="mQG-nQ-Z8i" secondAttribute="trailing" constant="20" id="Dw1-Pf-mVA"/>
+                            <constraint firstItem="1KM-nu-QZc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E9g-PN-hkv"/>
                             <constraint firstItem="gjt-0D-ZYH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gz5-qI-sXj"/>
                             <constraint firstItem="Ixa-pz-wNh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NZf-zZ-V4o"/>
+                            <constraint firstItem="1KM-nu-QZc" firstAttribute="top" secondItem="mQG-nQ-Z8i" secondAttribute="bottom" constant="20" id="UEV-VF-Xoz"/>
                             <constraint firstItem="gjt-0D-ZYH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="VEt-VW-DWb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ixa-pz-wNh" secondAttribute="trailing" constant="20" id="YWn-9b-L75"/>
-                            <constraint firstItem="q4a-gr-uz2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="a3C-Pn-MUn"/>
+                            <constraint firstItem="1KM-nu-QZc" firstAttribute="leading" secondItem="mQG-nQ-Z8i" secondAttribute="trailing" constant="20" id="Zcl-AJ-eBA"/>
                             <constraint firstItem="Ixa-pz-wNh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jUe-at-Cl3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ixa-pz-wNh" secondAttribute="bottom" constant="20" id="nta-7X-JVe"/>
-                            <constraint firstItem="q4a-gr-uz2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wUt-Se-x7n"/>
-                            <constraint firstItem="q4a-gr-uz2" firstAttribute="top" secondItem="mQG-nQ-Z8i" secondAttribute="bottom" constant="30" id="zwL-N6-Dml"/>
+                            <constraint firstItem="1KM-nu-QZc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oex-5D-zkf"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="nta-7X-JVe"/>
                                 <exclude reference="0ec-d7-nOm"/>
-                                <exclude reference="zwL-N6-Dml"/>
+                                <exclude reference="UEV-VF-Xoz"/>
+                                <exclude reference="Zcl-AJ-eBA"/>
                                 <exclude reference="jUe-at-Cl3"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Zcl-AJ-eBA"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
                             <mask key="constraints">
                                 <exclude reference="nta-7X-JVe"/>
-                                <exclude reference="zwL-N6-Dml"/>
+                                <include reference="Zcl-AJ-eBA"/>
                                 <exclude reference="jUe-at-Cl3"/>
                             </mask>
                         </variation>
@@ -151,23 +174,22 @@
                                 <include reference="nta-7X-JVe"/>
                                 <include reference="0ec-d7-nOm"/>
                                 <exclude reference="DcZ-3P-5cb"/>
-                                <exclude reference="Dw1-Pf-mVA"/>
-                                <include reference="zwL-N6-Dml"/>
+                                <include reference="UEV-VF-Xoz"/>
                                 <exclude reference="NZf-zZ-V4o"/>
                                 <include reference="jUe-at-Cl3"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="gridPicturesViewCollage" destination="q4a-gr-uz2" id="Fgt-AZ-SEb"/>
+                        <outlet property="gridPicturesViewCollage" destination="1KM-nu-QZc" id="X5n-d9-acg"/>
                         <outlet property="labelSwipeToShare" destination="mQG-nQ-Z8i" id="gGn-6k-VSp"/>
                         <outletCollection property="buttonsLayoutsChoice" destination="FCG-xr-46f" collectionClass="NSMutableArray" id="VU0-b7-3aI"/>
                         <outletCollection property="buttonsLayoutsChoice" destination="hCb-tn-9ke" collectionClass="NSMutableArray" id="L1z-r2-EtJ"/>
                         <outletCollection property="buttonsLayoutsChoice" destination="T8Z-VL-BS9" collectionClass="NSMutableArray" id="vDD-Xu-DMD"/>
-                        <outletCollection property="buttonsToAddPic" destination="t8L-zv-hXa" collectionClass="NSMutableArray" id="FWK-BP-gWv"/>
                         <outletCollection property="buttonsToAddPic" destination="3gG-oY-pcN" collectionClass="NSMutableArray" id="C77-gf-Vzx"/>
                         <outletCollection property="buttonsToAddPic" destination="ypo-nW-GVO" collectionClass="NSMutableArray" id="ASC-lj-Ump"/>
                         <outletCollection property="buttonsToAddPic" destination="bP2-hz-FnR" collectionClass="NSMutableArray" id="WdF-hC-BJG"/>
+                        <outletCollection property="buttonsToAddPic" destination="t8L-zv-hXa" collectionClass="NSMutableArray" id="FWK-BP-gWv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -182,9 +204,6 @@
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
