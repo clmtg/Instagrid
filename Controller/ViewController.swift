@@ -8,18 +8,29 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-    
+        
     // MARK: - Var
     
     //Temp data - Used to load user picked image as button background
     private var buttonBeingUsed: UIButton?
     
-
+    //Declare gesture to share grid
+    private var swipeToSharePicturesGrid = UISwipeGestureRecognizer()
+    
+    /// Function which does return the current device orienration status (Left/Right)
+    var orientation: UIInterfaceOrientation? {
+            return UIApplication.shared.windows.first?.windowScene?.interfaceOrientation
+    }
+    
+    // MARK: - Lifecycle functions
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        swipeToSharePicturesGrid = UISwipeGestureRecognizer(target: self, action: #selector(pictureGridFromViewShared))
+        gridPicturesViewCollage.addGestureRecognizer(swipeToSharePicturesGrid)
+        gridPicturesViewCollage.isUserInteractionEnabled = true
+        
+    }
     
     // MARK: - IBOutlet
 
@@ -27,8 +38,10 @@ class ViewController: UIViewController {
     @IBOutlet var buttonsLayoutsChoice: [UIButton]!
     //UIButton collection for the button in the 4x4 grids
     @IBOutlet var buttonsToAddPic: [UIButton]!
-    
-    
+    //UIView where the pictures grid will be build for collage
+    @IBOutlet var gridPicturesViewCollage: UIView!
+    //Label "Swipe up to share" above the collage
+    @IBOutlet var labelSwipeToShare: UILabel!
     
     
     // MARK: - IBAction
@@ -43,8 +56,7 @@ class ViewController: UIViewController {
         buttonBeingUsed = sender
         addPictures(sender)
     }
-    
-    
+        
     // MARK: - Functions
     
     /// Change the layout type that will be used to create the grid
@@ -95,6 +107,41 @@ class ViewController: UIViewController {
          imagePicker.allowsEditing = false
          self.present(imagePicker, animated: true, completion: nil)
     }
+    
+    /// Function called when the view is updated (device rotate left/right)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        swipeGestureUpdate()
+    }
+    
+    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.willTransition(to: newCollection, with: coordinator)
+        coordinator.animate { _ in
+            self.swipeGestureUpdate()
+        }
+    }
+    
+    func swipeGestureUpdate() {
+        guard let orientation = orientation else { return }
+        if orientation.isPortrait {
+            swipeToSharePicturesGrid.direction = .up
+            labelSwipeToShare.text = "Swipe up to share"
+        } else {
+            swipeToSharePicturesGrid.direction = .left
+            labelSwipeToShare.text = "Swipe left to share"
+        }
+    }
+    
+    // To provide the ability to transform a view to a picture
+    @objc
+    private func pictureGridFromViewShared() {
+                
+        let activityVC = UIActivityViewController(activityItems: [gridPicturesViewCollage.image], applicationActivities: nil)
+        present(activityVC, animated: true, completion: nil)
+        activityVC.completionWithItemsHandler = {(activityType: UIActivity.ActivityType?, success: Bool, returnedItems: [Any]?, error: Error?) in
+            
+        }
+    }
 }
 
 // MARK: - Extensions
@@ -111,4 +158,3 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
     }
     
 }
-

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,17 +13,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Instagrid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagrid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjt-0D-ZYH">
-                                <rect key="frame" x="174" y="54" width="66.5" height="20.5"/>
+                                <rect key="frame" x="161.66666666666666" y="54.000000000000007" width="66.666666666666657" height="20.333333333333336"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="q4a-gr-uz2" userLabel="stackGridbuttonsAddPic">
-                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <rect key="frame" x="45" y="272" width="300" height="300"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8hu-3J-LHi" userLabel="stackTopButtonsAddPic">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="150"/>
@@ -76,10 +76,10 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Ixa-pz-wNh" userLabel="stackButtonsLayout">
-                                <rect key="frame" x="80" y="811" width="254.5" height="31"/>
+                                <rect key="frame" x="67.666666666666686" y="759" width="255" height="31"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCG-xr-46f">
-                                        <rect key="frame" x="0.0" y="0.0" width="83.5" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="83.666666666666671" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="button0"/>
                                         <connections>
@@ -87,7 +87,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCb-tn-9ke">
-                                        <rect key="frame" x="85.5" y="0.0" width="83.5" height="31"/>
+                                        <rect key="frame" x="85.666666666666657" y="0.0" width="83.666666666666657" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="button01"/>
                                         <connections>
@@ -95,7 +95,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8Z-VL-BS9">
-                                        <rect key="frame" x="171" y="0.0" width="83.5" height="31"/>
+                                        <rect key="frame" x="171.33333333333331" y="0.0" width="83.666666666666686" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="button02"/>
                                         <connections>
@@ -107,7 +107,7 @@
                                 <variation key="heightClass=regular-widthClass=compact" axis="horizontal"/>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe up to share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQG-nQ-Z8i">
-                                <rect key="frame" x="139" y="247.5" width="136" height="20.5"/>
+                                <rect key="frame" x="127" y="221.66666666666666" width="136" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -159,6 +159,8 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="gridPicturesViewCollage" destination="q4a-gr-uz2" id="Fgt-AZ-SEb"/>
+                        <outlet property="labelSwipeToShare" destination="mQG-nQ-Z8i" id="gGn-6k-VSp"/>
                         <outletCollection property="buttonsLayoutsChoice" destination="FCG-xr-46f" collectionClass="NSMutableArray" id="VU0-b7-3aI"/>
                         <outletCollection property="buttonsLayoutsChoice" destination="hCb-tn-9ke" collectionClass="NSMutableArray" id="L1z-r2-EtJ"/>
                         <outletCollection property="buttonsLayoutsChoice" destination="T8Z-VL-BS9" collectionClass="NSMutableArray" id="vDD-Xu-DMD"/>
@@ -170,7 +172,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="123.88392857142857"/>
+            <point key="canvasLocation" x="136.92307692307691" y="123.69668246445497"/>
         </scene>
     </scenes>
     <resources>

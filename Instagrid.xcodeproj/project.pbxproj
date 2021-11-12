@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EBBFF187273C0188009BBE27 /* UIView+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBFF186273C0187009BBE27 /* UIView+Image.swift */; };
 		EBEAF04E2739125E009638B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEAF04D2739125E009638B7 /* AppDelegate.swift */; };
 		EBEAF0502739125E009638B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEAF04F2739125E009638B7 /* SceneDelegate.swift */; };
 		EBEAF0522739125E009638B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEAF0512739125E009638B7 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		EB1BAFBE27392E10003E00F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		EB1BAFC027392E25003E00F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		EBBFF186273C0187009BBE27 /* UIView+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Image.swift"; sourceTree = "<group>"; };
 		EBEAF04A2739125E009638B7 /* Instagrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBEAF04D2739125E009638B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBEAF04F2739125E009638B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,9 +41,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EBBFF185273C0168009BBE27 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EBBFF186273C0187009BBE27 /* UIView+Image.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		EBEAF0412739125E009638B7 = {
 			isa = PBXGroup;
 			children = (
+				EBBFF185273C0168009BBE27 /* Extensions */,
 				EBEAF04C2739125E009638B7 /* Instagrid */,
 				EBEAF064273915EE009638B7 /* SupportingFiles */,
 				EBEAF063273915DB009638B7 /* Controller */,
@@ -164,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBBFF187273C0188009BBE27 /* UIView+Image.swift in Sources */,
 				EBEAF0522739125E009638B7 /* ViewController.swift in Sources */,
 				EBEAF04E2739125E009638B7 /* AppDelegate.swift in Sources */,
 				EBEAF0502739125E009638B7 /* SceneDelegate.swift in Sources */,
