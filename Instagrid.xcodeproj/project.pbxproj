@@ -56,11 +56,7 @@
 		EBEAF0412739125E009638B7 = {
 			isa = PBXGroup;
 			children = (
-				EBBFF185273C0168009BBE27 /* Extensions */,
 				EBEAF04C2739125E009638B7 /* Instagrid */,
-				EBEAF064273915EE009638B7 /* SupportingFiles */,
-				EBEAF063273915DB009638B7 /* Controller */,
-				EBEAF062273915D0009638B7 /* View */,
 				EBEAF04B2739125E009638B7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,6 +72,10 @@
 		EBEAF04C2739125E009638B7 /* Instagrid */ = {
 			isa = PBXGroup;
 			children = (
+				EBBFF185273C0168009BBE27 /* Extensions */,
+				EBEAF064273915EE009638B7 /* SupportingFiles */,
+				EBEAF063273915DB009638B7 /* Controller */,
+				EBEAF062273915D0009638B7 /* View */,
 			);
 			path = Instagrid;
 			sourceTree = "<group>";
@@ -339,7 +339,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CES656DH72;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SupportingFiles/Info.plist;
+				INFOPLIST_FILE = Instagrid/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -369,7 +369,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CES656DH72;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SupportingFiles/Info.plist;
+				INFOPLIST_FILE = Instagrid/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
