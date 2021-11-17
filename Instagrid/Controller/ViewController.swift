@@ -42,6 +42,9 @@ class ViewController: UIViewController {
     @IBOutlet var gridPicturesViewCollage: UIView!
     //Label "Swipe up to share" above the collage
     @IBOutlet var labelSwipeToShare: UILabel!
+    //Arrow asset to update based on device orentation
+    @IBOutlet var arrowIcon: UIImageView!
+
     
     
     // MARK: - IBAction
@@ -126,7 +129,9 @@ class ViewController: UIViewController {
         if orientation.isPortrait {
             swipeToSharePicturesGrid.direction = .up
             labelSwipeToShare.text = "Swipe up to share"
+            arrowIcon.image = UIImage(named: "arrow")
         } else {
+            arrowIcon.image = UIImage(named: "arrowLeft")
             swipeToSharePicturesGrid.direction = .left
             labelSwipeToShare.text = "Swipe left to share"
         }
