@@ -2,7 +2,7 @@
 ## Create and share your grids
 Instagrid est une application iPhone permettant aux utilisateurs de combiner des photos en choisissant parmi plusieurs dispositions. Le résultat final est au format carré et partageable avec ses amis.
 
-###### Screenshots
+![](./screenshotReadmeMD.jpeg)
 
 ## Additional information
 - Support of **iPhone SE to iPhone 13 Pro Max**
